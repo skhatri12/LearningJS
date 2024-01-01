@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+  </head>
+
+  <body>
+    <h3>Loops:while,for,do while</h3>
+    <script>
+      let a = 5;
+      while (a) {
+        alert(a--);
+      }
+      //ans: 1
+      //loop stops when a decreases to 0
+
+      let c = 0;
+      while (++c < 3) {
+        alert(c);
+      }
+      //from 1 to 2
+
+      let b = 0;
+      while (b++ < 3) {
+        alert(b);
+      }
+      //from 1 to 3
+
+      let i;
+      for (i = 2; i <= 10; i++) {
+        if (i % 2 == 0) {
+          alert(i);
+        }
+      }
+      // 2 4 6 8 10
+
+      let k = 0;
+      while (k < 3) {
+        alert(`${k++}`);
+      }
+      //  0 1 2
+
+    </script>
+  </body>
+
+</html>

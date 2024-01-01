@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+  </head>
+
+  <body>
+    <script>
+      let age = +prompt("Enter your age");
+      function checkAge(age) {
+        if (age > 18) {
+          return alert("You are good to go");
+        } else {
+          return confirm('Did parents allow you?');
+        }
+      }
+      checkAge(age);
+
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        }
+        return confirm('Did parents allow you?');
+      }
+      checkAge(age);
+      //without else also nothing changes.
+    </script>
+  </body>
+
+</html>

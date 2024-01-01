@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical operators</title>
+  </head>
+
+  <body>
+    <h3>Result of logical operators </h3>
+    <script>
+      alert(null || 2 || undefined);
+      //output: 2
+
+      alert(alert(1) || 2 || alert(3));
+      //output: 1 and 2
+
+      alert(1 && null && 2);
+      //output: null
+
+      alert(alert(1) && alert(2));
+      //output: 1 and undefined
+
+      alert(null || 2 && 3 || 4);
+      //output: 3
+
+      if (age >= 14 && age <= 90);
+
+
+      //checking the range outside with two variants
+      if (!(age >= 14 && age <= 90));
+      if (age < 14 && age > 90);
+
+      if (-1 || 0) alert('first');
+      //result: -1,
+
+      if (-1 && 0) alert('second');
+      //doesnt run
+
+      if (null || -1 && 1) alert('third');
+      // result: 1
+    </script>
+  </body>
+
+</html>
