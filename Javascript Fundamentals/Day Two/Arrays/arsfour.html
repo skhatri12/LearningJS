@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Input</title>
+  </head>
+
+  <body>
+    <script>
+      function sumInput() {
+        let numbers = [];
+        let userInput;
+
+        while (true) {
+          userInput = prompt('Enter a number:');
+
+          if (userInput === null || userInput.trim() === '') {
+            break;
+          }
+
+          numbers.push(parseFloat(userInput));
+        }
+
+        let sum = 0;
+        for (let number of numbers) {
+          sum += number;
+        }
+
+        return sum;
+      }
+
+      alert('The sum of the entered numbers is: ' + sumInput());
+    </script>
+  </body>
+
+</html>

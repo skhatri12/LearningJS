@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <h3>Creating a calculator</h3>
+    <script>
+      let calculator = {
+        sum() {
+          return this.a + this.b;
+        },
+        multiply() {
+          return this.a * this.b;
+        },
+        read() {
+          this.a = +prompt("Enter value of a");
+          this.b = +prompt("Enter value of b");
+        }
+      }
+      calculator.read();
+      alert(calculator.sum());
+      alert(calculator.multiply());
+    </script>
+  </body>
+
+</html>

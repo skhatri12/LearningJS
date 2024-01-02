@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply</title>
+  </head>
+
+  <body>
+    <h3>Multiply numeric property values by 2</h3>
+    <script>
+      let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+      };
+      function multiplyNumeric(menu) {
+        for (let key in menu) {
+          if (typeof menu[key] == "number") {
+            menu[key] = menu[key] * 2;
+          }
+        }
+        return menu;
+      }
+      console.log(multiplyNumeric(menu));
+    </script>
+  </body>
+
+</html>

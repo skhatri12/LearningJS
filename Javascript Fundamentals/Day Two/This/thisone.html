@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object </title>
+  </head>
+
+  <body>
+    <h3>
+      Using this in Object Literal
+    </h3>
+    <script>
+
+      // function makeUser() {
+      //   return {
+      //     name: "John",
+      //     ref: this
+      //   };
+      // }
+      // let user = makeUser();
+      // alert(user.ref.name);  // Error
+
+      function makeUser() {
+        return {
+          name: "John",
+          ref() {
+            return this;
+          }
+        }
+      }
+      let user = makeUser();
+      alert(user.ref().name);
+
+
+
+    </script>
+  </body>
+
+</html>

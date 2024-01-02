@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Array</title>
+  </head>
+
+  <body>
+    <script>
+      let strings = ["Hare", "Krishna", "Hare", "Krishna",
+        "Krishna", "Krishna", "Hare", "Hare", ":-O"
+      ];
+      function unique(arr) {
+        let ustrings = [];
+
+        for (let names of arr) {
+          if (!ustrings.includes(names)) {
+            ustrings.push(names);
+          }
+        }
+        return ustrings;
+      }
+
+      alert(unique(strings)); 
+    </script>
+  </body>
+
+</html>
