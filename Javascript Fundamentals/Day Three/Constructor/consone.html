@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method in Constructor</title>
+  </head>
+
+  <body>
+    <script>
+      //constructor function
+      function userDetails(name, age, address, gender) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.gender = gender;
+
+        this.sayDetails = function () {
+          alert('My gender is ' + this.gender);
+        }
+      }
+
+      //object using constructor function
+      let user = new userDetails("Ram", 20, "Kathmandu", "Male");
+      console.log(user);
+      alert(user.sayDetails());
+    </script>
+  </body>
+
+</html>

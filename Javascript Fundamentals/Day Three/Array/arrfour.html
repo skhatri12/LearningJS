@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      let arr = [590, 485, 700, 696, 128];
+      function shuffle(arr) {
+        arr.sort(() =>
+          Math.random() - 0.5
+        )
+      };
+      shuffle(arr);
+      alert(arr);
+    </script>
+  </body>
+
+</html>

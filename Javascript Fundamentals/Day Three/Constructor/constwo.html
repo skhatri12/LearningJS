@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return from Constructor</title>
+  </head>
+
+  <body>
+    <script>
+      function userDetails() {
+        this.name = "Ram";
+        this.age = 20;
+        this.address = "Kathmandu";
+
+        return {
+          age: 25
+        }
+      }
+      alert(new userDetails().age);
+    </script>
+  </body>
+
+</html>

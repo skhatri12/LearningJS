@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object</title>
+  </head>
+
+  <body>
+    <script>
+      let user = {
+        name: "Ram",
+        age: 20,
+        isAdmin: "false",
+        address: {
+          city: "Kathmandu",
+          zipCode: "44600"
+        },
+        userDetails: function () {
+          alert("Hello,My name is  " + this.name + "I'm" + this.age + "  years old" + "I live in " + this.address.city);
+        }
+      };
+      alert(user.name);
+      console.log(user["age"]);
+      delete user.isAdmin;
+      console.log(user);
+      alert(user.userDetails());
+    </script>
+  </body>
+
+</html>

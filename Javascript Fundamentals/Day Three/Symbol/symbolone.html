@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+  </head>
+
+  <body>
+    <script>
+      let user = {
+        name: "Ram"
+      };
+      let id = Symbol("id");
+      user[id] = 10;
+      alert(user[id]);
+    </script>
+  </body>
+
+</html>
