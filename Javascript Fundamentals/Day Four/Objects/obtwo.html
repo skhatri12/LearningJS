@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+  </head>
+
+  <body>
+    <script>
+      //constructor function
+      function Course(title) {
+        this.title = title;
+        this.enroll = function () {
+          console.log("You have successfully enrolled");
+        };
+      }
+      let course = new Course("Javascript");
+      delete course.title;
+      course.checkEnrollment = function () {
+        console.log("No of enrollment has increased to 20");
+      };
+      course.enroll();
+      console.log(course);
+    </script>
+  </body>
+
+</html>

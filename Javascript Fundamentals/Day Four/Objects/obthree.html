@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+  </head>
+
+  <body>
+    <script>
+      //factory function
+      function createCourse(title) {
+        return {
+          title: title,
+          enroll: function () {
+            console.log("You get enrolled in this course");
+          }
+        }
+      }
+      let newCourse = createCourse("JavaScript");
+      console.log(newCourse.constructor);
+
+
+      //Constructor function
+      function Course(title) {
+        this.title = title;
+        this.enroll = function () {
+          console.log("Enrolled")
+        }
+      }
+      const course = new Course("Python");
+      console.log(course.constructor);
+    </script>
+  </body>
+
+</html>

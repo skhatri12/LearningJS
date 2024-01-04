@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+  </head>
+
+  <body>
+    <script>
+      var library = [
+        {
+          author: "Bill Gates",
+          title: "The Road Ahead",
+          readingStatus: true
+        },
+        {
+          author: "Steve Jobs",
+          title: "Walter Isaacson",
+          readingStatus: true
+        },
+        {
+          author: "Suzanne Collins",
+          title: "Mockingjay: The FInal Book of The Hunger Games",
+          readingStatus: false
+        }
+      ];
+
+      for (var i = 0; i < library.length; i++) {
+        var book = "'" + library[i].title + "'" + " " + "by" + " " + library[i].author;
+        if (library[i].readingStatus == true) {
+          console.log("Already Read" + " " + book);
+        }
+        else {
+          console.log("You still need to read" + " " + book);
+        }
+      }
+    </script>
+  </body>
+
+</html>

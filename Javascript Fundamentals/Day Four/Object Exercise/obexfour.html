@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume of a cylinder</title>
+  </head>
+
+  <body>
+    <script>
+      function Volume(radius, height) {
+        this.radius = radius;
+        this.height = height;
+        this.cylinderVolume = function () {
+          return Math.PI * radius * radius * height;
+        }
+      }
+
+      let cVolume = new Volume(2, 4);
+      console.log(cVolume);
+      console.log(cVolume.cylinderVolume().toFixed(4));
+    </script>
+  </body>
+
+</html>

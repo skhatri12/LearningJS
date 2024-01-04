@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      function ItemDescription(itemName, price, discount, itemCode) {
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.itemCode = itemCode;
+        this.discountValue = function () {
+          return price * discount / 100;
+        }
+      }
+
+      let items = new ItemDescription("Pen", 2000, 5, "A001");
+      console.log(items);
+      console.log(items.discountValue());
+
+    </script>
+  </body>
+
+</html>

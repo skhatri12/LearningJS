@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area & Perimeter of Circle</title>
+  </head>
+
+  <body>
+    <script>
+      function Circumference(radius) {
+        this.radius = radius;
+        this.calcCircumference = function () {
+          return 2 * Math.PI * radius;
+        }
+        this.calcArea = function () {
+          return Math.PI * radius * radius;
+        }
+      }
+      let circleCircumference = new Circumference(5);
+      console.log("Circumference of a cirlce is:" + " " + circleCircumference.calcCircumference().toFixed(4));
+      console.log("Area of a cirlce is:" + " " + circleCircumference.calcArea().toFixed(4));
+    </script>
+  </body>
+
+</html>

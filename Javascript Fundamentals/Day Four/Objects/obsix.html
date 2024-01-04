@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+  </head>
+
+  <body>
+    <script>
+      let course = {
+        title: "Python",
+        enroll: function () {
+          console.log("hello,python");
+        }
+      }
+
+      let course_1 = Object.assign({}, course);
+      console.log(course);
+      console.log(course_1);
+    </script>
+  </body>
+
+</html>

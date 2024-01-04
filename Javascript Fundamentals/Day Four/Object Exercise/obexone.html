@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Exercise</title>
+  </head>
+
+  <body>
+    <script>
+      let itemDescriptions = {
+        itemNames: "Scale",
+        prices: 5,
+        discounts: 0.5,
+        itemCodes: "S001"
+      };
+      console.log(itemDescriptions);
+
+
+      //above example in constructor
+      function ItemDescription(itemName, price, discount, itemCode) {
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.itemCode = itemCode;
+      }
+
+      let items = new ItemDescription("Pen", 20, 5, "A001");
+      console.log(items);
+
+
+      //factory function
+      function itemDesc(iName, iPrice, iDiscount, iitemCode) {
+        return {
+          iName: iName,
+          iPrice: iPrice,
+          iDiscount: iDiscount,
+          iitemCode: iitemCode
+        }
+      }
+
+      let iitems = itemDesc("Book", 500, 10, "B001");
+      console.log(iitems);
+
+    </script>
+  </body>
+
+</html>
