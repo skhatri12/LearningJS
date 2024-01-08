@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      const names = ["Ram", "Shyam", "Hari", "Rita", "Sita", "Hari"];
+      console.log(names.indexOf("Hari"));
+      console.log(names.indexOf("Hari", 3));
+      console.log(names.lastIndexOf("Hari"));
+      console.log(names.includes("Rita"));
+      console.log(names.includes("Rita", 4));
+
+      //using find method
+      let userroles = [{
+        name: "Student",
+        age: 20
+      }, {
+        name: "Teacher",
+        age: 25
+      },
+      {
+        name: "Doctor",
+        age: 30
+      },
+      {
+        name: "Nurse",
+        age: 23
+      }];
+      console.log(userroles.find(function (element) {
+        return element.name === "Doctor";
+      }))
+
+      console.log(userroles.find(element => {
+        return element.name === "Teacher";
+      }))
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      let theatreSeats = [
+        ['A1', 'A2', 'A3', 'A4', 'A5'],
+        ['B1', 'B2', 'B3', 'B4', 'B5'],
+        ['C1', 'C2', 'C3', 'C4', 'C5']
+      ];
+      console.log(theatreSeats[2][4]);
+
+      for (let i = 0; i < theatreSeats.length; i++) {
+        for (let j = 0; j < theatreSeats[i].length; j++) {
+          theatreSeats[i][j] = {
+            seat: theatreSeats[i][j],
+            status: 'Available'
+          }
+        }
+      }
+
+      theatreSeats[2][4].status = "Booked";
+      console.log(theatreSeats[2][4].status);
+      console.log(theatreSeats[1][2].status);
+
+    </script>
+  </body>
+
+</html>

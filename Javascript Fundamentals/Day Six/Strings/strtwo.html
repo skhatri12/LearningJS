@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+  </head>
+
+  <body>
+    <script>
+      let guestList = "Guests: \nRam \nShyam \nSita";
+      console.log(guestList);
+
+      let str1 = "Hello\nWorld";
+      let str2 = `Hello
+World`;
+      console.log(str1 == str2);
+
+
+      let str = "Hello";
+      console.log(str.at(-5));
+      str = 'F' + str.slice(1, 5);
+      console.log(str);
+
+
+      let statement = "Hello good morning";
+      console.log(statement.startsWith("Hello"));
+    </script>
+  </body>
+
+</html>

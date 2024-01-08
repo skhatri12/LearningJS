@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      let district = [{
+        name: "Kathmandu",
+        population: 2500000
+      },
+      {
+        name: "Lalitpur",
+        population: 2000000
+      },
+      {
+        name: "Bhaktapur",
+        population: 1500000
+      }, {
+        name: "Dolakha",
+        population: 5000000
+      }
+      ];
+
+      console.log(district.filter((city) => {
+        return city.population > 1500000
+      }));
+
+      console.log(district.map((city) => {
+        return city.population * 2
+      }))
+
+    </script>
+  </body>
+
+</html>

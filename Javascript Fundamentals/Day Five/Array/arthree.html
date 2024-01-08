@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      let names = ["Ferran", "Amenadiel", "Lucifer", "Rafael", "Gill"];
+      //for loop
+      for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+      }
+
+      //for of
+      for (let name of names) {
+        console.log(name);
+      }
+
+      //for each
+      names.forEach(function (name, index) {
+        console.log(name, index);
+      })
+
+      //join
+      let letters = ['s', 'u', 'b', 'a', 's', 'h'];
+      console.log(letters);
+      console.log(letters.join(''));
+      console.log(letters.join('-'));
+    </script>
+  </body>
+
+</html>
