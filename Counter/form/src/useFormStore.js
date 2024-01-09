@@ -1,10 +1,17 @@
 import { create } from 'zustand';
-
-const useFormStore = create((set) => ({
+import { persist } from 'zustand/middleware'
+const useFormStore = create(persist((set) => ({
   name: '',
   address: '',
   phone: '',
-  setName: 
-}))
+  setName: (newName) => set({ name: newName }),
+  setAddress: (newAddress) => set({ address: newAddress }),
+  setPhone: (newPhone) => set({ phone: newPhone }),
+}),
 
-export default useFormStore
+  {
+    name: 'formStore',
+    getStorage: () => sessionStorage,
+  }));
+
+export default useFormStore; 
